@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 01</title>
+    <style>
+     
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #fefefe;
+            color: #222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 50px 0;
+            flex: 1; 
+        }
+
+        main h2 {
+            margin-bottom: 20px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #eee;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            font-size: 0.85rem;
+        }
+
+        /* Simple mobile layout */
+        @media (max-width: 600px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                margin-top: 15px;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Task 01</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Welcome</h2>
+                <p>This project uses semantic HTML tags like header,nav,main and footer to create a clean structure.
+Basic CSS and responsive design are applied for simple styling and better viewing on all devices.</p>
+              
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 static website</p>
+        </div>
+    </footer>
+
+</body>
+</html>
