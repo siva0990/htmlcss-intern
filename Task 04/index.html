@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 04 Dropdown</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background: gray;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    background: #333;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li {
+    display: block;
+}
+</style>
+
+</head>
+
+<body>
+
+<ul>
+    <li><a href="#">Home</a></li>
+
+    <li>
+        <a href="#">Animals</a>
+        <ul>
+            <li><a href="#">Elephant</a></li>
+            <li><a href="#">Tiger</a></li>
+            <li><a href="#">Lion</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>

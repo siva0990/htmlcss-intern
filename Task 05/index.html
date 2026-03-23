@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 05 Simple Modal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+       
+        .btn {
+            background: black;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+       
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            visibility: hidden;
+        }
+
+     
+        #popup:target {
+            opacity: 1;
+            visibility: visible;
+        }
+
+      
+        .box {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .close {
+            display: inline-block;
+            margin-top: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="#popup" class="btn">Open Popup</a>
+
+    
+    <div id="popup">
+        <div class="box">
+            <h3>Hi</h3>
+            <p>This is a simple popup.</p>
+
+            
+            <a href="#" class="close">Close</a>
+        </div>
+    </div>
+
+</body>
+</html>

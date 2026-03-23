@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 10 Multi Page CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #444;
+        }
+
+        .page {
+            display: none;
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+
+    
+        #home {
+            display: block;
+        }
+
+
+        .page:target {
+            display: block;
+        }
+
+
+        .page:target ~ #home {
+            display: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            flex: 1;
+        }
+
+
+        .contact {
+            background: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<div id="home" class="page">
+    <h2>Home</h2>
+    <p>Welcome to home Task 10 page.</p>
+
+    <div class="grid">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</div>
+
+
+<div id="about" class="page">
+    <h2>About</h2>
+
+    <div class="flex">
+        <div class="box">Feature 1</div>
+        <div class="box">Feature 2</div>
+    </div>
+</div>
+
+<div id="services" class="page">
+    <h2>Services</h2>
+
+    <div class="grid">
+        <div class="card">Service 1</div>
+        <div class="card">Service 2</div>
+        <div class="card">Service 3</div>
+    </div>
+</div>
+
+<div id="contact" class="page">
+    <h2>Contact</h2>
+
+    <div class="contact">
+        <p>Email: example@mail.com</p>
+    </div>
+</div>
+
+</body>
+</html>

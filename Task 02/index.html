@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 02 Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 300px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #fff;
+    border: 1px solid #2a2a2a;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 150, 255, 0.3); /* cool blue tone */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 15px;
+    color: #4da6ff; /* elephant theme color */
+}
+
+p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+button {
+    margin: 10px 15px 20px;
+    padding: 10px;
+    width: calc(100% - 30px);
+    background: #4da6ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #80c1ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <img src="elephant.jpg" alt="Elephant">
+
+    <h1>Elephant</h1>
+
+    <p>
+        The elephant is the largest land animal on Earth, known for its intelligence,
+        strong memory, and gentle nature.
+    </p>
+
+    <button>Read More</button>
+</div>
+
+</body>
+</html>
